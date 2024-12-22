@@ -1,0 +1,64 @@
+{
+  "name": "@event-reminder-app/event-reminder-gms",
+  "version": "5.2.0",
+  "description": "Event Reminder App - GMS Church",
+  "homepage": ".",
+  "bugs": {
+    "url": "https://github.com/CelvinPrananta/Project-Event-Reminder/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CelvinPrananta/Project-Event-Reminder.git"
+  },
+  "license": "MIT",
+  "author": "The Event Reminder Team (https://github.com/CelvinPrananta)",
+  "scripts": {
+    "build": "vite build",
+    "lint": "eslint \"src/**/*.js\"",
+    "serve": "vite preview",
+    "start": "vite"
+  },
+  "dependencies": {
+    "@coreui/chartjs": "^4.0.0",
+    "@coreui/coreui": "^5.2.0",
+    "@coreui/icons": "^3.0.1",
+    "@coreui/icons-react": "^2.3.0",
+    "@coreui/react": "^5.4.1",
+    "@coreui/react-chartjs": "^3.0.0",
+    "@coreui/utils": "^2.0.2",
+    "@fancyapps/ui": "^4.0.0",
+    "@firebase/app": "^0.10.17",
+    "@firebase/storage": "^0.13.4",
+    "@fortawesome/free-solid-svg-icons": "^6.7.2",
+    "@fortawesome/react-fontawesome": "^0.2.2",
+    "@popperjs/core": "^2.11.8",
+    "browser-image-compression": "^2.0.2",
+    "chart.js": "^4.4.6",
+    "classnames": "^2.5.1",
+    "core-js": "^3.39.0",
+    "express": "^4.21.2",
+    "firebase": "^11.1.0",
+    "prop-types": "^15.8.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-dropzone": "^14.3.5",
+    "react-firebase-hooks": "^5.1.1",
+    "react-redux": "^9.2.0",
+    "react-router-dom": "^6.28.1",
+    "redux": "5.0.1",
+    "simplebar-react": "^3.2.6"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.3",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react": "^7.37.2",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "postcss": "^8.4.49",
+    "prettier": "3.3.3",
+    "sass": "^1.81.0",
+    "vite": "^5.4.11"
+  }
+}
