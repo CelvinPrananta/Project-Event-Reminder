@@ -96,4 +96,4 @@ event-reminder-gms
 
 copyright 2024 creativeLabs Celvin Prananta.   
 
-Code released under [the MIT license](https://github.com/CelvinPrananta/Project-Event-Reminder/blob/main/LICENSE).
+Code released under [the MIT license](https://github.com/CelvinPrananta/Project-Event-Reminder/blob/project-event-reminder/LICENSE).
