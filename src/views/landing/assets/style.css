@@ -53,6 +53,23 @@
   overflow-y: auto;
 }
 
+.events-container {
+  position: relative;
+  background-image: url('/src/views/landing/assets/images/bg-schedule-event.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* Efek 2D dengan overlay sederhana */
+  /* background-color: rgba(0, 0, 0, 0.6); */
+  background-color: rgb(0 0 0 / 88%);
+  background-blend-mode: multiply;
+  box-shadow: none;
+  border: none;
+  border-radius: 0;
+  outline: none;
+}
+
 /* Right container styles */
 .right-container {
   flex: 1;
