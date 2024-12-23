@@ -10,7 +10,7 @@ const AppFooter = () => {
         <p className='text-reserved'>All rights reserved.</p>
       </div>
       <div className='powered'>
-        <strong className="text-powered">Powered by <Link to="https://github.com/CelvinPrananta" className='link-powered no-underline' target="_blank" rel="noopener noreferrer">Kelvin</Link></strong>
+        <strong className="text-powered">Powered by <Link to="https://github.com/CelvinPrananta" className='link-powered no-underline' target="_blank" rel="noopener noreferrer">ICT Team</Link></strong>
       </div>
     </CFooter>
   )

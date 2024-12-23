@@ -66,26 +66,24 @@ const LandingPage = () => {
                     return false;
                 }
         
-                // Konversi endTime ke objek Date
-                const eventEndTime = new Date(wibNow); // Gunakan tanggal hari ini
+                // Konversi `created_at` ke objek Date
+                const eventCreatedAt = new Date(event.created_at);
+        
+                // Konversi `endTime` dan mulai dari tanggal `created_at`
+                const eventEndTime = new Date(eventCreatedAt); 
                 const [hours, minutes] = event.endTime.split(':');
                 eventEndTime.setHours(parseInt(hours, 10));
                 eventEndTime.setMinutes(parseInt(minutes, 10));
                 eventEndTime.setSeconds(0);
         
-                // Konversi created_at ke objek Date
-                const eventCreatedAt = new Date(event.created_at);
+                // Event di masa depan
+                const isEventInFuture = eventCreatedAt.getTime() > wibNow.getTime();
         
-                // Periksa apakah endTime belum lewat dari waktu saat ini
-                const isEndTimeValid = eventEndTime.getTime() > wibNow.getTime();
+                // Event sedang berlangsung
+                const isEventOngoing = eventCreatedAt.getTime() <= wibNow.getTime() && eventEndTime.getTime() > wibNow.getTime();
         
-                // Periksa apakah created_at berada di masa depan atau di masa kini
-                const isCreatedAtValid = eventCreatedAt.getTime() <= wibNow.getTime();
-
-                // Logika untuk menentukan apakah event valid
-                // 1. Jika event berada di masa kini dan `endTime` belum lewat, tampilkan
-                // 2. Jika event berada di masa depan dan `created_at` serta `endTime` belum lewat, tampilkan
-                return (isEndTimeValid && isCreatedAtValid) || (!isEndTimeValid && eventCreatedAt.getTime() > wibNow.getTime());
+                // Menampilkan event sedang berlangsung atau valid di masa depan
+                return isEventInFuture || isEventOngoing;
             });
         };
 
